@@ -1,54 +1,55 @@
 // 1. Faça um algoritmo que receba 10 números inteiros e armazene-os em um array.
 // Depois armazene em um array PAR todos os números que forem pares, e em um
 // array ÍMPAR os que forem ímpares, no final exiba os três vetores.
-// let numero: number
-// let ArrayNumeros = []
-// let ArraysPares = []
-// let indexPar = 0
-// let ArraysImpares = []
-// let indexImpar = 0
-// for (let contador = 0; contador < 10; contador++) {
-//     numero = parseInt(prompt("Insira um número"))
-//     ArrayNumeros.push(numero)
-//     if (ArrayNumeros[contador] % 2 == 0) {
-//         ArraysPares[indexPar] = ArrayNumeros[contador]
-//         indexPar++
-//     } else if (ArrayNumeros[contador] % 2 != 0) {
-//         ArraysImpares[indexImpar] = ArrayNumeros[contador]
-//         indexImpar++
-//     }
-// }
-// console.log(ArrayNumeros)
-// console.log(ArraysPares)
-// console.log(ArraysImpares)
+var numero;
+var ArrayNumeros = [];
+var ArraysPares = [];
+var indexPar = 0;
+var ArraysImpares = [];
+var indexImpar = 0;
+for (var contador = 0; contador < 10; contador++) {
+    numero = parseInt(prompt("Insira um número"));
+    ArrayNumeros.push(numero);
+    if (ArrayNumeros[contador] % 2 == 0) {
+        ArraysPares[indexPar] = ArrayNumeros[contador];
+        indexPar++;
+    }
+    else if (ArrayNumeros[contador] % 2 != 0) {
+        ArraysImpares[indexImpar] = ArrayNumeros[contador];
+        indexImpar++;
+    }
+}
+console.log(ArrayNumeros);
+console.log(ArraysPares);
+console.log(ArraysImpares);
 // 2. Faça um algoritmo com dois arrays A e B e preencha ambos com 10 elementos
 // cada. Depois salve em um terceiro array somente os números que estiverem nos
 // dois primeiros e forem maiores que 5. Exiba o último array no final.
 // Ex.: arrayA[5,6,2,4,8,7,3,6,7,1]
 // arrayB[8,5,3,1,4,7,8,2,3,6]
 // Deve ser exibido no último array apenas os números arrayC[6,8,8,7,6,7]
-// let numeroA: number
-// let numeroB: number
-// let ArrayNumerosA = []
-// let ArrayNumerosB = []
-// let ArrayNumerosC = []
-// let indexC = 0
-// for (let indexAB = 0; indexAB < 10; indexAB++) {
-//     numeroA = parseInt(prompt("Insira um número para o Index A"))
-//     ArrayNumerosA.push(numeroA)
-//     numeroB = parseInt(prompt("Insira um número para o Index B"))
-//     ArrayNumerosB.push(numeroB)
-// }
-// for (let index = 0; index < 10; index++) {
-//     for (let index2 = 0; index2 < 10; index2++) {
-//         if (ArrayNumerosA[index] == ArrayNumerosB[index2] && ArrayNumerosA[index] > 5) {
-//             ArrayNumerosC.push(ArrayNumerosA[index])
-//         }
-//     }
-// }
-// console.log(ArrayNumerosA)
-// console.log(ArrayNumerosB)
-// console.log(ArrayNumerosC)
+var numeroA;
+var numeroB;
+var ArrayNumerosA = [];
+var ArrayNumerosB = [];
+var ArrayNumerosC = [];
+var indexC = 0;
+for (var indexAB = 0; indexAB < 10; indexAB++) {
+    numeroA = parseInt(prompt("Insira um número para o Index A"));
+    ArrayNumerosA.push(numeroA);
+    numeroB = parseInt(prompt("Insira um número para o Index B"));
+    ArrayNumerosB.push(numeroB);
+}
+for (var index = 0; index < 10; index++) {
+    for (var index2 = 0; index2 < 10; index2++) {
+        if (ArrayNumerosA[index] == ArrayNumerosB[index2] && ArrayNumerosA[index] > 5) {
+            ArrayNumerosC.push(ArrayNumerosA[index]);
+        }
+    }
+}
+console.log(ArrayNumerosA);
+console.log(ArrayNumerosB);
+console.log(ArrayNumerosC);
 // 3. Crie uma classe Aluno com as propriedades: nome: string
 // idade: number
 // altura: number
